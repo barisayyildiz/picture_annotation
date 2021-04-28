@@ -45,14 +45,14 @@ const App = () => {
 			return(
 				{
 					tag : item.comment,
-					x : item.mark.x,
-					y : item.mark.y,
-					width : item.mark.width,
-					height : item.mark.height
+					xmin : item.mark.x,
+					ymin : item.mark.y,
+					xmax : item.mark.x + item.mark.width,
+					ymax : item.mark.x + item.mark.height
 				}
 			)
 		})
-		// console.log(data);
+		console.log(data);
 		axios.post("http://localhost:5000/photos",data)
 		.then(res => console.log(res))
 
