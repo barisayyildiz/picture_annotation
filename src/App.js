@@ -7,7 +7,6 @@ import {
 } from "react-picture-annotation";
 
 import './App.scss';
-import axios from 'axios';
 
 const App = () => {
 
@@ -53,8 +52,6 @@ const App = () => {
 			)
 		})
 		console.log(data);
-		axios.post("http://localhost:5000/photos",data)
-		.then(res => console.log(res))
 
 	}
 
@@ -71,25 +68,13 @@ const App = () => {
 					width={800}
 					height={600}
 					scrollSpeed={0}
-					// annotationData={
-					// 	[
-					// 		{
-					// 			id:"baris",
-					// 			comment:"hello world",
-					// 			mark:{
-					// 				type:"RECT",                  // now only support rect
-							
-					// 				// The number of pixels in the upper left corner of the image
-					// 				x:0,
-					// 				y:0,
-							
-					// 				// The size of tag
-					// 				width:100,
-					// 				height:100
-					// 			}
-					// 		}
-					// 	]
-					// }
+					dropdownOptions={
+						[
+							"car",
+							"animal",
+							"human"
+						]
+					}
 				/>
 
 				<button onClick={onClick}>Submit</button>
