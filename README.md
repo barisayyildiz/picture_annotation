@@ -1,8 +1,11 @@
 ## Çalıştırmak için
 
 `git clone https://github.com/barisayyildiz/picture_annotation`
+
 `cd picture_annotation`
+
 `rm package-lock.json`
+
 `npm install'`
 
 
