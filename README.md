@@ -1,3 +1,11 @@
+# Çalıştırmak için
+
+### `git clone https://github.com/barisayyildiz/picture_annotation`
+### `cd picture_annotation`
+### `rm package-lock.json`
+### `npm install'`
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
